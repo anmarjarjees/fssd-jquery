@@ -6,7 +6,7 @@ jQuery is a fast, small, and feature-rich JavaScript library. It makes things li
 You can read more about jQuery Library by visiting ["jQuery Official Website"](https://jquery.com/)
 
 ## About This Repo:
-jQuery Library Code Examples and Exercises for My Students - Full-Stack Developer Program
+jQuery Library Code Examples and Exercises with Comments for My Students - Full-Stack Developer Program
 
 ## Refernces:
 - Code Institute | Full Stack Software Development Diploma
