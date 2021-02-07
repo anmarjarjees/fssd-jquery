@@ -1,0 +1,50 @@
+/* #container for part 1 code and .container of part 2 code */
+#container, .container {
+	/*
+CSS3: And this is to make our container a flexbox.
+	*/
+	display: flex;
+
+	/*
+	Make the flexible items display in reverse order, and wrap if necessary:
+flex-flow: Layout the rows and wrap them
+	*/
+	flex-flow: row wrap; /* default value: 	row nowrap */
+	box-sizing:border-box; /* to include the padding and border within the element width */
+	/* auto for right and left to centre the element */
+	margin-right:auto;
+	margin-left:auto;
+	max-width:1050px;
+}
+
+/* alos .card and .box for to be used for both parts 1 and 2 */
+.card, .box {
+	/* Let all the flexible items be the same length, regardless of its content: */
+	flex:1; /* make contents controllable with flexbox */ 
+	display: flex;
+
+	/*
+Our flex-flow in this case is column, so we will have two side-by-side columns
+	*/
+	flex-flow:column;
+	max-width: 240px;
+	margin: 10px;
+	padding: 20px;
+	background-color: #fff;
+}
+
+/* just to override the background color for part 2*/
+.box {
+	background-color:#000;
+}
+
+/* for practicing mouse leave/enter */
+.makeRed {
+	background-color: red;
+	color: yellow;
+}
+
+.makeBlue {
+	background-color: blue;
+	color: white;
+}

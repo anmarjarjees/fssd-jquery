@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <style>
+        /*
+        Adding a class .underline
+        */
+        .underline {
+            text-decoration: underline;
+        }
+
+        .border {
+            border: solid 2px #ccc;
+        }
+
+        td,
+        th {
+            width: 5rem;
+            height: 2rem;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th {
+            background: lightblue;
+            border-color: white;
+        }
+
+        body {
+            padding: 1rem;
+            font-family: Roboto;
+        }
+
+        .odd {
+            background-color: #E84610;
+        }
+
+        .even {
+            background-color: #C65353;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>jQuery Script</h2>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+    <table>
+        <tr>
+            <th></th>
+            <th>Country</th>
+            <th>Price</th>
+            <th>Nutrition</th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <th>Spinach</th>
+            <td>America</td>
+            <td>28</td>
+            <td>90</td>
+            <td>Veg</td>
+        </tr>
+        <tr>
+            <th>Carrots</th>
+            <td>France</td>
+            <td>56</td>
+            <td>75</td>
+            <td>Veg</td>
+        </tr>
+        <tr>
+            <th>Brocolli</th>
+            <td>Bulgaria</td>
+            <td>12</td>
+            <td>70</td>
+            <td>Veg</td>
+        </tr>
+        <tr>
+            <th>Orange</th>
+            <td>Morocco</td>
+            <td>15</td>
+            <td>50</td>
+            <td>Fruit</td>
+        </tr>
+        <tr>
+            <th>Tangerine</th>
+            <td>Cyprus</td>
+            <td>12</td>
+            <td>25</td>
+            <td>Fruit</td>
+        </tr>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <!-- 
+    - our own script needs to go underneath the jQuery.
+    - Otherwise, the browser would not know how to read the dollar command because it needs the jQuery script in order to do that.
+     -->
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>

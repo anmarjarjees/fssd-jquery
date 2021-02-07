@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- this div#container to practice the first part -->
+    <!-- Note: in VSC. to generate random paragraphs, just type lorem then press TAB -->
+    <div id="container">
+        <div class="card">
+            <button class="makeRed">Button One</button>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rerum, repellat temporibus asperiores
+                labore expedita molestias dignissimos placeat ducimus architecto ratione voluptas odit vitae eligendi
+                accusantium eos quae assumenda voluptatem! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Provident, unde vitae quisquam accusantium deserunt ratione aut magnam ex dolorum quas neque dolorem id,
+                amet recusandae quibusdam. Ipsa aperiam laboriosam possimus.
+            </p>
+        </div>
+
+        <div class="card">
+            <button class="makeRed">Button Two</button>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rerum, repellat temporibus asperiores
+                labore expedita molestias dignissimos placeat ducimus architecto ratione voluptas odit vitae eligendi
+                accusantium eos quae assumenda voluptatem! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Provident, unde vitae quisquam accusantium deserunt ratione aut magnam ex dolorum quas neque dolorem id,
+                amet recusandae quibusdam. Ipsa aperiam laboriosam possimus.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- this div.container to practice the second part -->
+    <!-- 
+        Yes, we don't create two div(s) element to act as containers, but just to practice jQuery.
+        for more jQuery: 
+
+        We're just changing our div ID to a class there.
+        And we'll change it to class in our CSS.
+        And we change our CSS to box because we're now using box.
+    -->
+    <div class="container">
+        <!-- 
+            adding boxes (div elements), we will have 9 boxes in groups of 3
+
+            So when we click on one of our elements that has a box class, 
+            we want to determine what number that box is: one, two, or three.
+
+            As programmers, we need to know what's the class number 
+            of the current clicked div
+
+            And when we've identified the number of the box, 
+            we'll highlight all the boxes of the same number class.
+         -->
+
+        <!-- Group#1 -->
+        <!-- div#1 -->
+        <div class="box one">
+        </div>
+        <!-- div#2 -->
+        <div class="box three">
+        </div>
+        <!-- div#3 -->
+        <div class="box one">
+        </div>
+
+        <!-- Group#2 -->
+        <!-- div#4 -->
+        <div class="box two">
+        </div>
+        <!-- div#5 -->
+        <div class="box one">
+        </div>
+        <!-- div#6 -->
+        <div class="box two">
+        </div>
+
+        <!-- Group#3 -->
+        <!-- div#7 -->
+        <div class="box three">
+        </div>
+        <!-- div#8 -->
+        <div class="box three">
+        </div>
+        <!-- div#9 -->
+        <div class="box two">
+        </div>
+    </div>
+    <!-- It's a relative path, so we have to do "js/". -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
