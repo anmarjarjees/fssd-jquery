@@ -37,15 +37,20 @@
                         <li><a href="#">Two</a></li>
                         <li><a href="#">Three</a></li>
                         <!-- 
-                       We need to create and add this element with its attributes 
-                       and its child a element:
-                       <li class="last" style="background-color: pink;"><a href="#">Four</a></li>
+                       Task: We need to create and add this element
+                       with its attributes: class and style
+                       and its child a element: anchor element <a>
 
+                       <li class="last" style="background-color: pink;">
+                           <a href="#" style="color: white">Four</a>
+                       </li>
+
+                       The steps to take/write using JS:
                        step1: create li element
                        step2: attach a class="last"
                        step3: change its background color to pink
-                       step3: create a element
-                       step4: adding text content to a element
+                       step3: create a element (to be a child for the li element later)
+                       step4: adding text content to a element to the a element
                        step5: make the text of a element to be in white color 
                        step6 (our own step): attach an attribute named "href" with the value of "#"
                        step7: append/attach this a element to li
@@ -57,7 +62,7 @@
         <article id="home-page">
             <section class="jumbotron">
                 <h1>The DOM</h1>
-                <p>The good, the bad and the ugly.</p>
+                <p id="vip">The good, the bad and the ugly.</p>
             </section>
             <section class='content'>
                 <p class="lead">Manipulating the DOM with Javascript.</p>
@@ -66,6 +71,16 @@
         <div id="test">
             <p class="lead">We added this paragraph and its div container just for testing.</p>
         </div>
+
+
+        <footer>
+            <!-- just for testing -->
+            <ul class="nav">
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+            </ul>
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -76,7 +91,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
         </script>
-    <!-- <script type="text/javascript" src="js/app.js"></script> -->
+    <script src="js/transcript.js"></script>
 </body>
 
 </html>

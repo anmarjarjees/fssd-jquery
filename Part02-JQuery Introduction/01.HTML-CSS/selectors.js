@@ -61,6 +61,13 @@ we use this syntax: ("ul li"):
 // Get all list item elements that are descendants of unordered lists
 $("ul li");
 
+$('ul#main>li');
+/*
+0: li#logoNav
+1: li#stream1_btn
+2: li#stream2_btn
+3: li#stream3_btn
+*/
 
 /*
 Pseudo selectors can also be used, just as they were in CSS.
