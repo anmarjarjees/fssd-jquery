@@ -1,11 +1,23 @@
 $(document).ready(function () {
+	// for testing that:
+	// 1. script.js is linked to my html file
+	// 2. jQuery library is fully loaded 
 	console.log("the console output");
+	/*
+	CI-LMS HTML code:
+	three classes for different div elements with these topics:
+	.stream1 => HTML, jQuery, CSS
+	.stream2 => Python 
+	.stream3 => MySql, Django
+	*/
+
 	/* 1. JQuery Events (Event Handler) ****************************************/
 	// we can see an .on("click") event:
 	// on click event will run that jQuery code:
 	// as soon as someone clicks on the ID "stream1_btn".
 	$("#stream1_btn").on("click", function () {
-		alert("test1");
+		// alert("test1");
+		// removing these classes (if they're already applied)
 		$(".stream1").removeClass('highlight_stream');
 		$(".stream2").removeClass('highlight_stream');
 		$(".stream3").removeClass('highlight_stream');
@@ -29,16 +41,21 @@ $(document).ready(function () {
 		// write our code here the same as above
 	});
 
+	// or you can use this way also (similar to .hover() method):
+	$('.stream3').on("mouseover", function () {
+		// alert('you hovered over div.stream3');
+	});
+
 	// We can also use hover function
 	// this event works on mouse hover
 	// in jQuery Events Challenge1, you will use this method "hover()"
 	$('.stream3').hover(function () {
-		//alert('you hovered over div.stream3');
-	})
-
-	// or you can use this way also:
-	$('.stream3').on("mouseover", function () {
 		// alert('you hovered over div.stream3');
+	});
+
+	// Just for trying the same as above but using on() method:
+	$("#stream1_btn").on("mouseenter", function () {
+		$(".stream1").addClass('highlight_stream');
 	});
 
 	// We can also trigger events when the mouse is hovered over the element 
@@ -51,11 +68,6 @@ $(document).ready(function () {
 		// $(".stream1").addClass('highlight_stream');
 	});
 
-	// Just for trying the same as above but using on() method:
-	$("#stream1_btn").on("mouseenter", function () {
-		$(".stream1").addClass('highlight_stream');
-	});
-
 	$("#stream1_btn").mouseleave(function () {
 		// alert("Mouse Leave Event!");
 		// write our code here the same as above
@@ -64,7 +76,7 @@ $(document).ready(function () {
 	});
 
 	/* 2. JQuery Effects ****************************************/
-	// as soon as someone clicks on the ID "stream1_btn".
+	// as soon as someone clicks on the ID "stream1_btn" => hide/show
 	// Note: in order to see the effect we need to run it line by line:
 	$("#stream2_btn-hide").on("click", function () {
 		// hide() function:
@@ -80,6 +92,7 @@ $(document).ready(function () {
 		// number of milliseconds, in this case 1000 msc
 		// $(".stream1").hide(1000);
 	}); // end #stream1_btn click
+
 
 	$("#stream2_btn-show").on("click", function () {
 		// show() function:
@@ -103,10 +116,10 @@ $(document).ready(function () {
 		// it does not make much sense to use the function on an element itself.
 		// When the toggled element becomes hidden, you cannot click on it again to make it visible.
 		// So what we usually do is click on an element, such as a button, which toggles a different element.
-		// $(".stream1").toggle(); // show/hide
+		$(".stream1").toggle(); // show/hide
 		// Here, we're passing a speed to the show() method.
 		// It tells jQuery how fast to show the element.
-		$(".stream1").toggle('slow');
+		// $(".stream1").toggle('slow');
 		//$(".stream1").toggle('medium');
 		//$(".stream1").toggle('fast');
 		// number of milliseconds, in this case 1000 msc
@@ -133,9 +146,12 @@ $(document).ready(function () {
 		// $(".stream3").slideToggle(1000);
 	});
 
+
 	$("#stream3_btn-slideDown").on("click", function () {
 		$(".stream1").slideDown();
 	});
+
+
 
 	$("#stream3_btn-fade").on("click", function () {
 		/*

@@ -149,3 +149,8 @@ li{
 	}
 }
 
+
+/* At the end adding our simple CSS rule */
+nav li:hover {
+	cursor: pointer;
+}

@@ -120,7 +120,7 @@ will return an array
 
 /*
  * Creating new elements and add/attach it to the html code on the fly (run)
- */
+*/
 
 // step1: create li element
 var li = document.createElement('li'); // <li></li>

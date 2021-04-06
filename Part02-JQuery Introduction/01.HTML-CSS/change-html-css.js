@@ -38,8 +38,6 @@ So this will change the color of the font of any <li> element to red.
 // Change the color of the text of all list item elements
 $("li").css("color", "red");
 
-
-
 // Let's try this with another element, in this case an <h2>:
 // Change the text-decoration to underline.
 // Underline all h2 elements
@@ -53,8 +51,10 @@ We can actually see this using the chrome developer tools {Element Tab}
 You can see the inline style of color red has been added to each <li> element,
 and each <h2> has "text-decoration:underline" added as an inline style.
 
-Remember that we don't like using inline styles, as it mixes content and styling on the same section of a page.
-Content and styling should be separated in their own sections wherever possible, and we will do this in future lessons.
+Remember that we don't like using inline styles, 
+as it mixes content and styling on the same section of a page.
+Content and styling should be separated in their own sections wherever possible, 
+and we will do this in future lessons.
 */
 
 // Add a solid border of 1px and a color of "#ccc" to all unordered lists
@@ -63,11 +63,14 @@ $("ul").css("border", "solid 1px #ccc"); // adds a 1px wide border to all lists
 
 
 /*
-HTML Function: So like the ".CSS" function, there is also an HTML function which can retrieve an element's HTML.
+HTML Function: So like the ".CSS" function, 
+there is also an HTML function which can retrieve an element's HTML.
 That is the ".HTML" function.
 */
 // Get the HTML contained within an element with an ID of "my_footer"
 $("#my_footer").html(); // retrieves all the HTML from "#my_footer". (form with id ="my_footer")
+// Or saving the element into a variable:
+let myFooter = $("#my_footer").html();
 
 // Get the HTML contained within an element called "body"
 $("body").html(); // retrieves the entire body from the HTML
@@ -75,24 +78,29 @@ $("body").html(); // retrieves the entire body from the HTML
 /*
 As we can place "CSS" we can also place "HTML". We can place tags inside HTML
 below we are going to override the paragraph inside #my_footer with the following <h1>
+using jQuery Method "html()"
 */
 // Add a h1 to the "body" element
 $("#my_footer").html("<h1>This is my fancy new content. Thanks jQuery, you're the best!</h1>");
-
+// Remember in JavaScript, we used:
+// document.getElementById("my_footer").innerHTML = "<h1>Header1</h1>";
 
 /*
 Replace an element with just a text content:
 */
 // Add new text to the footer
 $("#my_footer").text("This is my fancy new. Thanks again jQuery"); // h1 will be replaced by this text
-
+// Remember in JavaScript, we used:
+// document.getElementById("my_footer").innerText = "Here is my pure text";
 
 /*
-Inserting/Removing new element by adding it to the page (DOM) or remove it from the page (DOM)
+Inserting/Removing new element by adding it to the page (DOM) 
+or remove it from the page (DOM)
 
 Using .append() method ==> adding content onto the end of an existing selected HTML element:
 
-if there is an element with the ID "myElement", this paragraph will be appended on the end.
+if there is an element with the ID "myElement", 
+this paragraph will be appended on the end.
 */
 // Append a new element to the end of all of the elements contained in the
 // element that has an ID of "myElement"
@@ -100,8 +108,25 @@ $("#myElement").append("<p>This is a new element</p>")
 
 // try also with #my_footer
 // Append a span containing the copyright to the footer 
-// appending the copyright 2017 on to the end of the text that we've previously put
-$("#my_footer").append("<span>&copy; 2020.</span>");
+// appending the copyright 2021 on to the end of the text that we've previously put
+$("#my_footer").append("<span>&copy; 2021.</span>");
+/*
+Copyright Information
+       © 2021.
+*/
+
+/*
+The code before:
+<div id="my_footer">
+    <p id="copyright">Copyright Information</p>
+</div>
+
+The code after:
+<div id="my_footer">
+    <p id="copyright">Copyright Information</p>
+    <span>© 2021.</span>
+</div>
+*/
 
 
 
