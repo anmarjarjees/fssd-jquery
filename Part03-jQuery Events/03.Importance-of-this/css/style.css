@@ -7,7 +7,7 @@ CSS3: And this is to make our container a flexbox.
 
 	/*
 	Make the flexible items display in reverse order, and wrap if necessary:
-flex-flow: Layout the rows and wrap them
+	flex-flow: Layout the rows and wrap them
 	*/
 	flex-flow: row wrap; /* default value: 	row nowrap */
 	box-sizing:border-box; /* to include the padding and border within the element width */
@@ -15,11 +15,11 @@ flex-flow: Layout the rows and wrap them
 	margin-right:auto;
 	margin-left:auto;
 	max-width:1050px;
+	background: yellowgreen;
 }
 
-/* alos .card and .box for to be used for both parts 1 and 2 */
+/* also .card and .box for to be used for both parts 1 and 2 */
 .card, .box {
-	/* Let all the flexible items be the same length, regardless of its content: */
 	flex:1; /* make contents controllable with flexbox */ 
 	display: flex;
 
@@ -27,9 +27,13 @@ flex-flow: Layout the rows and wrap them
 Our flex-flow in this case is column, so we will have two side-by-side columns
 	*/
 	flex-flow:column;
+	/* Let all the flexible items be the same length, regardless of its content: */
 	max-width: 240px;
 	margin: 10px;
 	padding: 20px;
+	/* 
+	Notice that the total width of this element: 240px + 20px + 20px = 280px
+	*/
 	background-color: #fff;
 }
 

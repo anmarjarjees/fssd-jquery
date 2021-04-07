@@ -10,7 +10,7 @@ target the specific <p> element that was clicked
 
 3. And using the children method target all the <a> elements within this paragraph
 
-4. And using chaining, use the css method to change there background-color to yellow
+4. And using chaining, use the css method to change their background-color to yellow
         */
         //sets <a> element within paragraph  to yellow  
 
